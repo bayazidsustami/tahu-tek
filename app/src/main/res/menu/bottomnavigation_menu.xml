@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/registrasi_menu"
+        android:title="Registrasi"
+        android:icon="@drawable/ic_registrasi"/>
+
+    <item
+        android:id="@+id/topup_menu"
+        android:title="Top Up"
+        android:icon="@drawable/ic_top_up"/>
+
+    <item
+        android:id="@+id/bahan_menu"
+        android:title="Daftar Bahan"
+        android:icon="@drawable/ic_bahan"/>
+
+    <item
+        android:id="@+id/laporan_menu"
+        android:title="Laporan"
+        android:icon="@drawable/ic_laporan"/>
+
+</menu>

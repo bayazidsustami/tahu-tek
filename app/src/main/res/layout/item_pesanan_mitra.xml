@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/img_pesanan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_namabahanmitra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Bahan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_ketbahanmitra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="keterangan bahan" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hargabahanmitra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:paddingRight="10dp"
+                    android:text="Harga Bahan" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kurang"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="-" />
+
+            <TextView
+                android:layout_gravity="start"
+                android:id="@+id/txtnilai"
+                android:layout_width="50dp"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/tambah"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_tambahbahanmitra"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/green"
+                android:text="Pesan"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bbb" />
+
+    </LinearLayout>
+
+</LinearLayout>

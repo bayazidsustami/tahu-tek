@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_dr"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/bgdrawer">
+
+        <ImageView
+            android:id="@+id/image_user"
+            android:src="@drawable/sahrukh"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nama_user"
+        android:text="Nama Admin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fl_dr"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</RelativeLayout>

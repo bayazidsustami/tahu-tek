@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.Bahans.EditBahanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedstroke">
+
+        <TextView
+            android:id="@+id/tv_eb1"
+            android:text="Edit Bahan"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_eb2"
+            android:layout_below="@+id/tv_eb1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Nama Bahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_eb1"
+            android:layout_below="@+id/tv_eb2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_eb3"
+            android:layout_below="@+id/et_eb1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_eb2"
+            android:layout_below="@+id/tv_eb3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_eb4"
+            android:layout_below="@+id/et_eb2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_eb3"
+            android:layout_below="@+id/tv_eb4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_eb5"
+            android:layout_below="@+id/et_eb3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Foto Bahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/rl_eb2"
+            android:layout_below="@id/tv_eb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_eb1"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/tv_eb5"
+                android:background="@drawable/roundedstroke"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+
+            <Button
+                android:id="@+id/btn_editgambarbahan"
+                android:layout_width="wrap_content"
+                android:text="Browse"
+                android:textSize="12sp"
+                android:background="@drawable/roundedstroke"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/rl_eb2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_simpaneditbahan"
+                android:text="Edit"
+                android:textColor="#fff"
+                android:background="@drawable/roundedbuttongreen"
+                android:layout_width="110dp"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/btn_bataleditbahan"
+                android:text="Batal"
+                android:textColor="#fff"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/roundedbuttonred"
+                android:layout_width="110dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

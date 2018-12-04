@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_topup"
+        android:text="@string/saldo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_topup1"
+        android:text="Masukkan Id Mitra"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tv_topup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_topupid"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_topup1"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_topup2"
+        android:text="Masukkan Nominal Tambahan Saldo"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/et_topupid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_topupjumlah"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_topup2"
+        android:layout_width="250dp"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_below="@id/et_topupjumlah"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_tambahtopup"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/green"
+            android:text="TAMBAH"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btn_bataltopup"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/red"
+            android:layout_marginLeft="40dp"
+            android:text="BATAL"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

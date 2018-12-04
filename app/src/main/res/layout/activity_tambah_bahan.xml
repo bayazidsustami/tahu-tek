@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.Bahans.TambahBahanActivity">
+
+    <FrameLayout
+        android:id="@+id/upbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:onClick="back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_back"/>
+
+        <ImageView
+            android:layout_below="@id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_below="@id/upbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedstroke">
+
+            <TextView
+                android:id="@+id/tv_tb1"
+                android:text="Tambah Bahan"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_tb2"
+                android:layout_below="@+id/tv_tb1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="Nama Bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_tb1"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/tv_tb2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_tb3"
+                android:layout_below="@+id/et_tb1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_tb2"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/tv_tb3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_tb4"
+                android:layout_below="@+id/et_tb2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_tb3"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/tv_tb4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_tb5"
+                android:layout_below="@+id/et_tb3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Foto Bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/rl_tb2"
+                android:layout_below="@id/tv_tb5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_tb1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/tv_tb5"
+                    android:background="@drawable/roundedstroke"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp" />
+
+                <Button
+                    android:id="@+id/btn_tambahgambarbarang"
+                    android:layout_width="wrap_content"
+                    android:text="Browse"
+                    android:textSize="12sp"
+                    android:background="@drawable/roundedstroke"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/rl_tb2"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="40dp">
+
+                <Button
+                    android:id="@+id/btn_simpantambahbarang"
+                    android:background="@color/green"
+                    android:text="Tambah"
+                    android:textColor="#fff"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:id="@+id/btn_bataltambahbarang"
+                    android:text="Batal"
+                    android:background="@color/red"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
